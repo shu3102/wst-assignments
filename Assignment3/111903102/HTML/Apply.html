@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script>
+    </script>
+</head>
+
+<body>
+    <nav class="nav">
+        <a href="http://127.0.0.1:5500/student.html">student</a> Apply
+        <a href="http://127.0.0.1:5500/gallery.html">Gallery</a>
+    </nav>
+    <form action="phpserver.php" method="post">
+        <table>
+            <tr>
+                <td><label for="">First name : </label></td>
+                <td><input type="text" id="firstname" name="firstname" oninput="input(this)" placeholder="first name"></td>
+            </tr>
+            <tr>
+                <td><label for="">Last name :  </label></td>
+                <td><input type="text" id="lastname" name="lastname" oninput="input(this)" placeholder="last name"></td>
+            </tr>
+            <tr>
+                <td><label for="">User name :  </label></td>
+                <td><input type="text" id="username" name="username" oninput="input(this)" placeholder="last name"></td>
+            </tr>
+            <tr>
+                <td><label for="">Email-Address :  </label></td>
+                <td><input type="email" id="email" name="email" oninput="input(this)" placeholder="example@gmail.com"></td>
+            </tr>
+            <tr>
+                <td><label for="">State :  </label></td>
+                <td><input type="text" id="state" name="state" oninput="input(this)" placeholder="maharashtra"></td>
+            </tr>
+            <tr>
+                <td><label for="">Country :  </label></td>
+                <td><input type="text" id="country" name="country" oninput="input(this)" placeholder="india"></td>
+            </tr>
+            <tr>
+                <td><input type="SUBMIT" name="submit"></td>
+                <td><input type="RESET"></td>
+            </tr>
+        </table>
+
+        <script>
+            function input(element) {
+                var x = element.value;
+            }
+        </script>
+
+
+    </form>
+
+</body>
+
+</html>
